@@ -1,0 +1,39 @@
+body {
+	margin: 0 0 0 0;
+	background-color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+input[type=text], select {
+	transition: border-bottom 0.3s;
+	border: 0;
+	background-color: rgba(0, 0, 0, 0);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input[type=text]:focus, select:focus {
+	outline: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+select {
+	padding: 5px 5px 5px 5px;
+}
+
+a:visited, a:hover, a:link, a:active {
+	text-decoration: none !important;
+}
+
+.logo {
+	width: 30%;
+}
+
+@media only screen and (max-width: 650px) {
+	.logo {
+		width: 100%;
+	}
+}
+
+/*
+font-family: 'Roboto Mono', monospace;
+*/

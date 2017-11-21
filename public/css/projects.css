@@ -1,0 +1,27 @@
+.section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionTitle {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.project {
+    flex-grow: 1;
+    width: 40%;
+    padding: 30px;
+}
+
+.projectTitle {
+    padding: 15px 20px 15px 25px;
+    color: white;
+    font-size: 20px;
+    background-color: orange;
+    border-radius: 20px;
+}
+
+.projectContent {
+    padding: 10px;
+}

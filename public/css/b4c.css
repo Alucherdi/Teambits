@@ -1,0 +1,66 @@
+#b4c {
+    padding: 10px 30px 10px 30px;
+}
+
+.subtitle {
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 4px solid orange;
+}
+
+.bigtitle {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.programa {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    border-bottom: 4px solid orange;
+}
+
+.headimagenes {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carq {
+    border-bottom: 4px solid orange;
+}
+
+.pleft, .pright {
+    width: 40%;
+}
+
+.pimg {
+    width: 40%;
+}
+
+.pimg > img, .imgcont img {
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.imgcont {
+    width: 100%;
+}
+
+#smalltext {
+    padding-top: 30px;
+    padding-bottom:20px;
+    margin: auto; 
+    text-align: center;
+}
+
+@media only screen and (max-width: 850px) {
+    .pleft, .pright {
+        width: 80%;
+    }
+    
+    .pimg {
+        width: 80%;
+    }
+}

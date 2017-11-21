@@ -1,0 +1,139 @@
+<?php require("public/partials/head.phtml"); ?>
+	<!-- TEMPLATES -->
+	<link rel="stylesheet" href="/public/css/board.css">
+    <div class="layoutBox">
+        <div class="title">
+            Hay quienes eligen un empleo y quienes elegimos una empresa en constante crecimiento
+        </div>
+    </div>
+
+	<div class="notes">
+			<div class="note">
+				<div class="noteTitle">Desarrollador Java Nivel SR.</div>
+				<br>
+				<div class="noteContent">
+					Requisitos:
+					<ul>
+						<li>Edad y sexo indistintos</li>
+						<li>Licenciatura en Ingeniería, Programación, Informática, Actuaria, etc. Pasante, trunco o titulado</li>
+					</ul>
+
+					
+
+					Experiencia mínima de 4 años en: 
+					<ul>
+						<li>Java J2EE</li>
+						<li>Spring</li>
+						<li>Bases de datos: SQL, Oracle</li>
+						<li>Experiencia Angular</li>
+						<li>Idioma inglés medio-avanzado</li>
+					</ul>
+				
+					<br>
+					<a href="https://www.occ.com.mx/empleo/oferta/9892023/-en-Ciudad%20de%20M%C3%A9xico%20(Distrito%20Federal)?returnURL=https%3A%2F%2Fwww.occ.com.mx%2Fempleos-en-mexico-y-el-mundo%2Fbitsdev%232">Link de la oferta</a>
+				</div>
+			</div>
+
+			<div class="note">
+				<div class="noteTitle">DESARROLLADOR JAVA SR. </div>
+				<br>
+				<div class="noteContent">
+					Requisitos:
+					<ul>
+						<li>Edad y sexo indistintos</li>
+						<li>Licenciatura en Ingeniería, Programación, Informática, Actuaria, etc. Pasante, trunco o titulado</li>
+					</ul>
+
+					
+
+					Experiencia mínima de 5 años en: 
+					<ul>
+						<li>Spring</li>
+						<li>Bases de datos: SQL, Oracle o postgress.</li>
+						<li>Experiencia en Angular</li>
+						<li>Ingles intermedio-avanzado</li>
+					</ul>
+
+					<br>
+					<a href="https://www.occ.com.mx/empleo/oferta/10395543-programador-java-sr-?rank=1&page=1&type=1&uuid=&ai=false&showseo=true&returnURL=%2Fempleos-en-mexico-y-el-mundo%2Fbitsdev%231">Link de la oferta</a>
+				</div>
+			</div>
+
+			<div class="note">
+				<div class="noteTitle">PRODUCT SUPPORT . NET</div>
+				<br>
+				<div class="noteContent">
+					Requisitos:
+					<ul>
+						<li>Edad y sexo indistintos.</li>
+						<li>Licenciatura en Ingeniería, Programación, Informática, Actuaria, etc. Titulado</li>
+					</ul>
+
+					Herramientas:
+					<ul>
+						<li>SQL  (2008 R2, 2008, 2005, 2000)</li>
+						<li>Visual Studio (2010, 2008, 2005, 2003)</li>
+						<li>Visual Studio 6.0</li>
+						<li>Idioma: Inglés avanzado</li>
+					</ul>
+
+					Funciones principales del puesto:
+					<ul>
+						<li>Proporcionar soporte a usuarios internos y personal de soporte.</li>
+						<li>Investigar los incidentes de aplicación.</li>
+						<li>Evaluar la resolución de incidentes y estimar los cambios en la aplicación.</li>
+						<li>Aplicar resoluciones, dando lugar a revisiones oportunas y sin errores en las solicitudes.</li>
+						<li>Garantizar que los componentes del software de la aplicación se archiven de acuerdo a los estándares de TI.</li>
+					</ul>
+					<br>
+					<a href="https://www.occ.com.mx/empleo/oferta/10395735-desarrollador-net-sr-disponibilidad-inmediata-?rank=2&page=1&type=1&uuid=&ai=false&showseo=true&returnURL=%2Fempleos-en-mexico-y-el-mundo%2Fbitsdev%232">Link de la oferta</a>
+				</div>
+			</div>
+		</div>
+
+	<h1 align="center">Sube tu curriculum (PDF, Word)</h1>
+	<form action="/curriculum" method="POST" enctype="multipart/form-data" id="curform">
+		<div align="center"><input id="archivo" type="file" name="archivo"></div>
+		<div class="formContain">
+			<div class="left">
+				Nombre: <br>
+				<input type="text" required name="nombre">
+				Correo: <br>
+				<input type="text" required name="correo"> 	
+				Teléfono: <br>
+				<input type="text" required name="telefono"> 	
+				<br>Nacimiento: <input type="date" name="fecha">
+				País: <br>
+				<input type="text" required name="pais">
+				Ubicación actual: <br>
+				<input type="text" required name="ubicacion"> 
+			</div>
+
+			<div class="right">
+				¿Cuanto quieres ganar?:
+				<div class="salary">
+					<input placeholder="De" type="text" required name="ganardesde">
+					<input placeholder="Hasta" type="text" required name="ganarhasta">
+					<select id="" name="ganar">
+						<option value="mensual">Mensual</option>
+						<option value="mensual">Quincenal</option>
+					</select><br><br>
+				</div>
+				Último grado de estudios: <br>
+				<input type="text" required name="gradoestudios"> 
+				Carrera Universitaria: <br>
+				<input type="text" required name="carrera"> 
+				Puesto a solicitar: <br>
+				<input type="text" required name="puesto"> 
+				Habilidades: <br>
+				<input type="text" required name="habilidades"> 
+				Experiencia: <br>
+				<input type="text" required name="experiencia"> 
+			</div>
+		</div>
+		<textarea cols="30" id="" placeholder="Carta de presentación" rows="10" name="carta" required></textarea> <br>
+		<div align="center"><input type="submit" value="Enviar"></div><br><br>
+	</form>
+	
+	<!-- FOOTER -->
+	<?php require("public/partials/foot.phtml"); ?>

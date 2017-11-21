@@ -1,0 +1,135 @@
+<?php require("public/partials/head.phtml"); ?>
+<link rel="stylesheet" href="/public/css/dpl.css">
+	<!-- TEMPLATES -->
+	<div id="dpl">
+        <div class="subtitle">Programa DPL</div>
+        <div class="programa">
+            <div class="pleft">
+                <img src="/public/img/dpl.png" alt="">
+                <p>
+                    <b>Antecedentes</b>
+                    <br><br>
+                    Durante más de 15 años, hemos servido a clientes de telefonía
+                    celular, eso nos ha dado la experiencia de solucionar problemas y
+                    dar las mejores soluciones para el procesamiento de millones de
+                    registros que requieren ser modificados, o filtrados a necesidades
+                    de los clientes. Por ello, diseñamos un ETL, que responda de forma
+                    rápida, efectiva, y económica a los requerimientos de los clientes.
+                    Somos propietarios del código, por lo que podemos incrementar su
+                    funcionalidad o adaptarla a nuevos sistemas.
+                    <br> <br>
+
+                    <b>Descripción del Producto:</b>
+                    <br> <br>
+                    Es un sistema que permite recibir información de diferentes fuentes
+                    como son Bases de Datos, Archivos texto, archivos binarios, ASN1,
+                    TAP, Radius, Diameter, Ama entre otros.
+                    <br>
+                    - Permite complementar la información a través de reglas de transformación y filtrado.
+                    <br>
+                    - Permite distribuir la información procesada a diferentes fuentes
+                    como son a Base de Datos, Archivos texto y/o archivos binarios.
+                    <br>
+                    - La distribución de archivos puede ser por medio de ftp, Sftp y/o
+                    copiarlos a otras rutas tanto de la misma maquina u otro equipo.
+                    <br>
+                    - Es un sistema que mediante grafos permite crear las validaciones,
+                    filtros, trasformación y distribución de la información.
+                    Generación de estadísticas y reportes de forma automática.
+                </p>
+            </div>
+
+            <div class="pright">
+                <img src="/public/img/graphdpl.png" alt="">
+                <p>
+                    <b>Ventajas de DPL</b>
+                    </br>
+                    - Alto Desempeño<br>
+                    - Escalable<br>
+                    - Menor Tiempo de implementación<br>
+                    - Monitoreo Incluido<br>
+                    - Versión para instalar en PC y usarlo como maqueta y/o ambiente de desarrollo.<br>
+                    - El Analista de Aseguramiento de Ingresos por medio de esta
+                    herramienta puede implementar las reglas de negocio para
+                    validar el tráfico de los registros.<br>
+                    - Implementación de Reglas de negocio en Java<br>
+                    - Uso de threads<br>
+                    <br> <br>
+                    <b>Soluciones con DPL</b>
+                    </br>
+                    - Mediador<br>
+                    - ETL<br>
+                    - Aseguramiento de Ingresos<br>
+                    - Colector<br>
+                    - On line<br>
+                    - Batch
+                </p>
+            </div>
+        </div>
+
+        <div align="center">
+			<div class="bigtitle">A continuación mostramos ejemplos de su funcionalidad</div><br>
+			<br><br><br>
+			<div class="bigtitle">Creación de proyectos</div><br>
+            <p>
+                Un proyecto puede estar formado por diferentes grafos.<br>
+                En este ejemplo hay 2 flujos de entrada uno de ellos recibe de entrada un archivo de cdrs tipo AMA y el otro un archivo tipo texto
+            </p><br>
+			<img src="/public/img/creacionproyectos.png" alt="">
+			<div class="bigtitle">Entrada de Archivo</div><br>
+            <br>
+            <p>En las propiedades de entrada del archivo tipo Ama se definen los campos de entrada, Tipo de entrada, Longitud, Codificación etc.</p>
+			<img src="/public/img/entradaarchivo.png" alt="">
+			<div class="orangeborder"></div>
+			<div class="bigtitle">Filtro</div><br>
+            <br>
+            <p>En las propiedades del filtro se establecen las condiciones por las cuales se requiere filtrar información que no se utilizara en el proceso, por lo que los registros
+rechazados pueden o no ser enviados a un archivo de salida o Transformación.</p>
+			<img src="/public/img/filtro.png" alt="">
+            <div class="orangeborder"></div>
+            <div class="bigtitle">Transformación</div>
+            <br>
+            <p>En las propiedades de transformación se seleccionan los campos sobre los cuales se realizaran validaciones y/o se pasaran al siguiente flujo.
+            Cada campo puede tener sus propias condiciones de transformación.</p>
+            <img src="/public/img/transformacion.png" alt="">
+            <div class="orangeborder"></div>
+            
+            <div class="bigtitle">Salida a Archivo</div>
+            <br>
+            <p>En las propiedades se seleccionan los campos disponibles y que se requiere sean escritos en el archivo de salida indicando posición el tamaño del campo y la
+            alineación (I/D)</p>
+            <img src="/public/img/salidaarchivo.png" alt="">
+            <div class="orangeborder"></div>
+
+            <div class="bigtitle">Funciones predefinidas</div>
+            <img src="/public/img/funcionespredefinidas.png" alt="">
+            <p>Las funciones predefinidas se utilizan para la transformación, validación y enriquecimiento de la información.</p>
+            <br>
+            <img src="/public/img/funcionespredefinidas2.png" alt="">
+            <div class="orangeborder"></div>
+
+            <div class="bigtitle">Monitoreo Web</div>
+            <img src="/public/img/monitoreoweb.png" alt="">
+            <div class="orangeborder"></div>
+
+            <div class="bigtitle">Reportes</div>
+            <img src="/public/img/dplreportes.png" alt="">
+            <div class="orangeborder"></div>
+
+            <div class="bigtitle">Características de nueva versión V5.0</div>
+            <p>
+                - Generación de nuevas funciones disponibles para el usuario <br>
+                - Mejora de la interface gráfica <br>
+                - Optimización de matriz de threads
+            </p>
+            <br>
+            <img src="/public/img/nuevav5.png" alt="">
+            <br><br>
+            Para mayor información sobre el DPL, no dude en <a href="/">Contactarnos.</a>
+        </div>
+    </div>
+
+	<?php require("public/partials/fbmsgs.phtml"); ?>
+	
+	<!-- FOOTER -->
+	<?php require("public/partials/foot.phtml"); ?>

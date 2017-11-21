@@ -1,0 +1,23 @@
+.subtitle {
+    font-size: 60px;
+    color: #3b57cc;
+    width: 100%;
+}
+
+.productList {
+	background-color: #3b57cc;
+	width: 70%;
+	margin: auto;
+	padding: 20px 30px 40px 30px;
+	border-radius: 30px;
+}
+
+.productList > p {
+	margin: auto;
+	padding: auto;
+	color: white;
+}
+
+.productRef:visited, .productRef:hover, .productRef:link, .productRef:active, .productRef{
+	color: white;
+}

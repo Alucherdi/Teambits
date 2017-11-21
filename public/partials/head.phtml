@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+	<link rel="stylesheet" href="/public/css/toast.css">
+	
+
+	<link rel="stylesheet" type="text/css" href="/public/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="/public/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="/public/css/body.css">
+	<title>Teambits</title>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+	<link rel="stylesheet" href="/public/css/search.css">
+	<script src="/public/js/toast.js"></script>
+	<?php 
+		if (isset($emailSent)) {
+			echo "<script>toast('".$emailSent."');</script>";
+		}
+	?>
+<!-- #LOGO -->
+	<img src="/public/img/logo_teambits.png" class="logo">
+
+	
+	<div id="searchContainer">
+		<input type="text" id="search" placeholder="Buscar" onkeyup="search()">
+		<div class="items"></div>
+	</div>
+
+	
+<!-- #NAVBAR -->
+	<link rel="stylesheet" href="/public/css/navbar.css">
+	<script src="/public/js/navbar.js"></script>
+	<div class="sidenav">
+		<div class="sidenavSubTitle">
+			<h3>Teambits</h3>
+			<h3 onclick="closeSidenav()">X</h3>
+		</div>
+		<div class="menus">
+			<div class="meetus">
+				<div class="sidenavTitle">Conócenos</div>
+				<ul class="urls">
+					<li><a href="/about">¿Quienes somos?</a></li>
+					<li><a href="/about#alliances">Alianzas</a></li>
+					<li><a href="/about#valuesSection">Nuestros valores</a></li>
+					<li><a href="/#clients">¿Quienes son nuestros clientes?</a></li>
+				</ul>
+			</div>
+
+			<div class="services">
+				<div class="sidenavTitle">Servicios</div>
+				<ul class="urls">
+					<li><a href="/services/outsourcing">Outsourcing</a></li>
+					<li><a href="/services/training">Capacitación</a></li>
+					<li><a href="/services/development">Desarrollo de software</a></li>
+				</ul>
+			</div>
+
+			<div class="products">
+				<div class="sidenavTitle">Productos</div>
+				<ul class="urls">
+					<li><a href="/products/b4c">B4C</a></li>
+					<li><a href="/products">DPL</a></li>
+					<li><a href="/products/erp">ERP FusionPro</a></li>
+				</ul>
+			</div>
+
+			<div class="projects">
+				<div class="sidenavTitle">Proyectos</div>
+				<ul class="urls">
+					<li><a href="/projects">Proyectos destacados</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="navbar">
+		<!-- <div class="title">
+			
+			Teambits
+		</div> -->
+		<span class="burgerMenu" onclick="openSidenav()">Menu</span>
+
+		<div class="links">
+			<a class="link" href="/"><p>Inicio</p></a>
+			<a class="link" href="/about"><p>Acerca de nosotros</p></a>
+			<a class="link" href="/services"><p>Servicios</p></a>
+			<a class="link" href="/products"><p>Productos</p></a>
+			<a class="link" href="/projects"><p>Proyectos</p></a>
+			<a class="link" href="/board"><p>Bolsa de trabajo</p></a>
+		</div>
+		
+	</div>
+	<script src="/public/js/search.js"></script>
+
+<!-- Template -->

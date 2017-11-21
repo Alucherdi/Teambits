@@ -1,0 +1,72 @@
+#training {
+    padding: 10px 30px 10px 30px;
+}
+
+.ttitle {
+    font-weight: bold;
+    border-bottom: 4px solid orange;
+    padding-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 60px;
+}
+
+.tcap {
+    border-bottom: 4px solid orange;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tcurContent {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.pleft, .pright{
+    width: 40%;
+}
+
+.pleft {
+    text-align: right;
+}
+
+.pright {
+    text-align: left;
+}
+
+.type b {
+    color: #3b57cc;
+    font-size: 30px;
+}
+
+.type li {
+    list-style: none;
+}
+
+.image {
+    width: 50%;
+}
+
+.image img {
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.division {
+    border-bottom: 4px solid orange;
+}
+
+
+@media only screen and (max-width: 860px) {
+    .pleft, .pright{
+        width: 80%;
+    }
+
+    .image {
+        width: 80%;
+    }
+}

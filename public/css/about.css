@@ -1,0 +1,118 @@
+.section {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.aboutTitle {
+    font-size: 40px;
+    font-size: 40px;
+    border-bottom: 8px solid orange;
+    width: 100%;
+}
+
+.aboutContent {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#about {
+    width: 50%;
+}
+
+#image > img {
+	object-fit: contain;
+	max-width: 100%;
+}
+
+#image {
+	width: 40%;
+}
+
+.values > .content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+    justify-content: space-around;
+}
+
+.values > .content > div:nth-child(odd) {
+    width: 30%;
+}
+
+.section .title {
+    font-size: 60px;
+}
+
+.section:nth-child(odd) {
+    background-color: #3b57cc;
+}
+
+.section:nth-child(odd) {
+    color: white;
+}
+
+.alliance h4 {
+    padding: 10px 0 10px 30px;
+    background-color: #3b57cc;
+    color: white;
+    border-radius: 20px;
+}
+
+.alliancesFormat {
+	display: flex;
+	justify-content: space-around;
+}
+
+.allianceImage {
+	width: 20%;
+}
+
+.allianceImage > img {
+	object-fit: contain;
+	max-width: 100%;
+}
+
+.allianceText {
+	width: 60%;
+}
+
+.objectives > .content{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.objectives > .content > div {
+    width: 30%;
+}
+
+@media only screen and (max-width: 750px) {
+	.aboutContent, .values > .content {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.values > .content img {
+		margin: auto;
+		width: 50%;
+	}
+	
+	#about {
+		width: 100%;
+	}
+
+	#image {
+		width: 70%;
+	}
+
+	#values > div {
+		width: 100%;
+	}
+
+	.objectives > .content > div {
+		width: 100%;
+	}
+}

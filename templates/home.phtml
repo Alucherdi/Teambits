@@ -1,0 +1,212 @@
+<?php require("public/partials/head.phtml"); ?>
+<!-- #TEMPLATE -->
+	<link rel="stylesheet" href="/public/css/home.css">
+	<div class="slider">
+	</div>
+	<div class="newsSection">
+		<div class="newsCarousel">
+			<img src="http://kesarequipments.com/images/kesar%20research.jpg" alt="">
+			<img src="http://kesarequipments.com/images/kesar%20research.jpg" alt="">
+			<img src="http://kesarequipments.com/images/kesar%20research.jpg" alt="">
+			<img src="http://kesarequipments.com/images/kesar%20research.jpg" alt="">
+			<img src="http://kesarequipments.com/images/kesar%20research.jpg" alt="">
+			<img src="http://kesarequipments.com/images/kesar%20research.jpg" alt="">
+		</div>
+
+		<div class="news">
+			<div class="title">Últimas noticias</div>
+			<hr>
+			<ul>
+				<a href="/services/development"><li>Desarrollo de aplicaciones</li></a>
+				<a href="/products/erp"><li>ERP FusiónPro</li></a>
+				<a href="/services/training" class="nsr"><li>Capacitación</li></a>
+				<a href="/services/outsourcing"><li>Programa Outsourcing</li></a>
+			</ul>
+		</div>
+	</div>
+
+	<div class="notesSection" id="notasdeinteres">
+		<div class="title">Notas de interés</div>
+		<div class="notes">
+			<div class="note">
+				<img src="https://image.prntscr.com/image/c73e498d140842a2b88cedc2a221a4f7.png" alt="">
+				<div class="noteTitle">ERP Fusión Pro</div>
+				<div class="noteContent">
+				Diseñado de forma Modular (contabilidad,
+cuentas por pagar, cuentas por pagar, inventarios, facturación electrónica, estados financieros, asistencia, nóminas). Cada módulo trabaja
+de forma independiente o conectado con otros.
+				</div>
+			</div>
+
+			<div class="note">
+				<img src="/public/img/b4c.jpeg" alt="">
+				<div class="noteTitle">Programa B4C</div>
+				<div class="noteContent">Herramienta diseñada para darle a los Carriers
+de Telefonia celular la funcionalidad de
+tarifación, conciliación, facturación de CDR´s.</div>
+			</div>
+
+			<div class="note">
+				<img src="/public/img/dpl.jpeg" alt="">
+				<div class="noteTitle">DPL</div>
+				<div class="noteContent">Herramienta que mejora la funcionalidad de un
+ETL tradicional (recibe información de diferentes
+fuentes, las transforma con reglas de negocio y
+las carga en un destino de base de datos o
+archivos).</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="referencesSection">
+		<div class="title">Referencias</div>
+		<div class="references">
+			<div class="reference">
+				<div class="refTitle">"Gracias a Teambits por el servicio brindado en el desarrollo de la
+aplicación, para empresas dedicadas a la publicidad digital, con
+ello hemos mejorado un 200% el tiempo de respuesta y la satisfacción de nuestros clientes y en consecuencia las ventas."</div>
+				<div class="refAuthor">- Héctor Díaz, Director de Spacio Gráfico</div>
+			</div>
+
+			<div class="reference">
+				<div class="refTitle">“Gracias a Teambits por el servicio brindado en Staffing, todo el
+personal que fue asignado al proyecto cumplía con lo esperado“ <br>
+- Roberto Vargas Fuentes, Director de Tecnología y Mejora de Procesos"</div>
+				<div class="refAuthor">- Pendulum Associates</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="clientsSection" id="clients">
+		<div class="title">Clientes</div>
+		<div class="clients">
+			<div class="client" align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Nielsen_logo.svg/1200px-Nielsen_logo.svg.png" alt=""></div>
+			<div class="client" align="center"><img src="https://www.izzi.mx/izzi/img/logos/izzi-black.svg" alt=""></div>
+			<div class="client" align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Alsea_logo.png" alt=""></div>
+
+			<div class="client" align="center"><img src="/public/img/pendulum.png" alt=""></div>
+			<div class="client" align="center"><img src="/public/img/totalplay.png" alt=""></div>
+			<div class="client" align="center"><img src="/public/img/vm.png" alt=""></div>
+			<div class="client" align="center"><img src="/public/img/att.png" alt=""></div>
+			<div class="client" align="center"><img src="/public/img/pwc.png" alt=""></div>
+		</div>
+	</div>
+
+	<div class="contactSection" id="contactanos">
+		<div class="title">Contacto</div>
+		<div class="contactForm">
+			<form action="/sendmail" method="POST">
+				<input type="text" name="name" placeholder="Nombre">
+				<input type="text" name="business" placeholder="Empresa">
+				<input type="text" name="phone" placeholder="Teléfono">
+				<input type="text" name="mail" placeholder="Email">
+				<label for="service">Servicio: </label>
+				<select name="service" placeholder="Servicio">
+					<option value="training">Asesoría</option>
+				</select> <br> <br>
+				<input type="checkbox" name="returnCall"> <label for="returnCall">Quiero que me regresen la llamada</label> <br>
+				<br>
+				<input type="text" name="message" id="" placeholder="Mensaje">
+				<label for="schedule">Horario de localización:</label>
+				<select name="schedule">
+					<option value="11am_to_2pm">11:00 am - 02:00 pm</option>
+					<option value="3pm_to_8pm">03:00 pm - 08:00 pm</option>
+				</select>
+				<br>
+				<br>
+				<input type="submit" value="Enviar">
+				<div class="g-recaptcha" data-sitekey="6LeiGDQUAAAAACJpv2R6GFbHTw7i6Fm6gien2EDB"></div>
+			</form>
+			<div id="contactMap"></div>
+		</div>
+		<br>
+
+		<div class="customerService">
+			<div class="title">Atención a clientes</div>
+			<div class="content">
+				<p>
+					De Lunes a Viernes<br>
+					Calle Montecito No. 11<br> 
+					Pent House 4 Colonia Nápoles <br>
+					Municipio Benito Juárez, Ciudad de México<br>
+					CP.03810 <br>
+					<br>
+					<b>Ing. Javier Rodríguez Morales</b> <br>
+					Comercialización <br>
+					javier.rodriguez@teambits.mx <br>
+					Tel: 01 55 5523 9501
+					<br><br>
+					<b>Lic. Alfredo Torres Rios</b> <br>
+					Cuentas Estratégicas<br>
+					alfredo.torres@teambits.mx<br>
+					Tel: 01 55 5523 9501
+
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- FOOTER -->
+<?php require("public/partials/foot.phtml"); ?>
+	<!-- #MAIN -->
+	<script>
+		var map
+		function initMap() {
+			map = new google.maps.Map(document.getElementById("contactMap"), {
+				center: { lat: 19.3950001, lng: -99.1737762 },
+				zoom: 15
+			})
+		}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmaCOIkyNT6IkZXnZMsLer6dKjrt9EtdE&callback=initMap" async defer></script>
+
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="/public/slick/slick.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			console.log("hi");
+			$('.newsCarousel').slick({
+				infinite: true,
+				slidesToShow: 1,
+				centerMode: true,
+				autoplay: true,
+				autoplaySpeed: 2000,
+				adaptiveHeight: true,
+				arrows: false,
+				slidesToScroll: 1
+			});
+
+			$('.clients').slick({
+				infinite: true,
+				slidesToShow: 3,
+				centerMode: true,
+				autoplay: true,
+				autoplaySpeed: 2000,
+				adaptiveHeight: true,
+				centerMode: true,
+				slidesToScroll: 1,
+				responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+			});
+		});
+	</script>

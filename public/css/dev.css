@@ -1,0 +1,43 @@
+#development {
+    padding: 10px 30px 10px 30px;
+}
+
+.subtitle {
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 4px solid orange;
+}
+
+#development > .content {
+    display: flex;
+    justify-content: space-around;
+}
+
+#development > .content {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+#development > .content > p {
+    width: 50%;
+}
+
+#development .image {
+    width: 35%;
+}
+
+#development .image img {
+    object-fit: contain;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    #development > .content > p {
+        width: 80%;
+    }
+    
+    #development .image {
+        width: 80%;
+    }
+}

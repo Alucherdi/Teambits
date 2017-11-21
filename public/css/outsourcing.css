@@ -1,0 +1,29 @@
+#outsourcing {
+    padding: 10px 30px 10px 30px;
+}
+
+.subtitle {
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 4px solid orange;
+}
+
+#outsourcing > .content {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.leftp, .rightp {
+    width: 40%;
+}
+
+#outsourcing > img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+    .leftp, .rightp {
+        width: 80%;
+    }
+}
